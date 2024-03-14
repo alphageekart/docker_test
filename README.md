@@ -31,7 +31,33 @@
 # docker usage
     docker run hello-world
 
-get ubuntu image
     docker pull ubuntu
-
     docker run -it ubuntu
+
+    docker ps -a # view all containers
+
+    docker rm container_name
+
+    docker run -it --name ubuntu --volume test:/mnt ubuntu
+
+    echo test > /mnt/test
+
+    docker volume ls
+    sudo cat /var/lib/docker/volumes/test/_data/test
+
+    docker volume remove test
+    docker container prune
+
+    docker run -it --name ubuntu --volume /home/user:/mnt ubuntu
+
+    *** TODO figure docker root user for files issue
+
+## docker network
+
+    docker run -p 8080:80 nginx
+
+    docker run --net=host nginx # works on just localhost
+
+    
+
+
