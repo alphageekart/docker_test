@@ -73,6 +73,6 @@
 
     docker build -t iris-docker .
 
-    docker run 
+    docker run -p 9999:9999 iris-docker
 
 
