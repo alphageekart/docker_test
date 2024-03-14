@@ -69,10 +69,18 @@
     docker stop container_name
     docker kill container_name
 
-# docker build
+## docker build
 
     docker build -t iris-docker .
 
     docker run -p 9999:9999 iris-docker
 
+## docker exec
+
+    docker run -it python:3.9
+    docker container start reverent_tharp 
+    docker exec -it reverent_tharp sh
+    docker container prune
+
+    
 
