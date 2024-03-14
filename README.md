@@ -58,6 +58,21 @@
 
     docker run --net=host nginx # works on just localhost
 
-    
+## docker-compose
+
+    docker-compose up -d
+
+    docker-compose logs
+
+    docker-compose down
+
+    docker stop container_name
+    docker kill container_name
+
+# docker build
+
+    docker build -t iris-docker .
+
+    docker run 
 
 
